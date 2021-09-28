@@ -1,0 +1,45 @@
+body {
+    background: aqua;
+    padding: 0;
+    margin: 0;
+}
+
+header, section, footer, main {
+
+    padding: 40px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-color: #e7da23;
+
+}
+
+#banner div {
+    width: 600px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 700px) {
+
+    body {
+        background: red;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+} /*=========Closing bracket for MQ========*/
